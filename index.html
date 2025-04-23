@@ -29,20 +29,30 @@
 </head>
 <body>
   <header class="navbar" role="banner">
-    <div class="logo"><strong>BR</strong> Architects</div>
-    <nav class="nav-links" role="navigation" aria-label="Main Navigation">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <div class="logo">
+      <strong>BR</strong> Architects
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-label="Hero Image">
-      <img src="images/architect.jpg" alt="Glass skyscraper extending into the sky" class="hero-image">
-      <div class="hero-text">
-        <span class="hero-logo">BR</span> Architects
-      </div>
+  <main id="main-content">
+    <section class="hero" aria-label="Introduction Section">
+      <figure class="hero-image-wrapper">
+        <img 
+          src="images/architect.jpg" 
+          alt="Modern glass skyscraper by BR Architects reaching into the sky" 
+          class="hero-image"
+        >
+        <figcaption class="hero-text">
+          <span class="hero-logo">BR</span> Architects
+        </figcaption>
+      </figure>
     </section>
 
     <section id="features" class="features-section" aria-label="Our Features">
@@ -72,8 +82,10 @@
     </section>
   </main>
 
-  <footer>
-    <p style="text-align:center; padding: 2rem 0;">&copy; 2025 BR Architects. All rights reserved.</p>
+  <footer role="contentinfo">
+    <div class="footer-content" style="text-align:center; padding: 2rem 0;">
+      <small>&copy; 2025 BR Architects. All rights reserved.</small>
+    </div>
   </footer>
 </body>
 </html>
